@@ -5,5 +5,4 @@ package com.klizos.blockchain.data.network
  * on 15-07-2021.
  */
 
-class BlockChainSocket {
-}
+const val CONNECTION_URL = "wss://ws.blockchain.info/inv"

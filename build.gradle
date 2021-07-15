@@ -26,4 +26,5 @@ task clean(type: Delete) {
 }
 ext {
     okhttp_bom = "4.9.0"
+    gson = "2.8.7"
 }
