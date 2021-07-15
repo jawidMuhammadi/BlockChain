@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
 }
 
 android {
@@ -55,4 +57,11 @@ dependencies {
 
     //GSON-(PARSER)
     implementation "com.google.code.gson:gson:$gson"
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+
+    //HILT
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+    kapt "com.google.dagger:hilt-compiler:$hilt_version"
+
+
 }
