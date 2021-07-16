@@ -6,3 +6,4 @@ package com.klizos.blockchain.data.network
  */
 
 const val CONNECTION_URL = "wss://ws.blockchain.info/inv"
+const val UNCOFIRMED_SUBCRIPTION ="{op: unconfirmed_sub}"

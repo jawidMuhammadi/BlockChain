@@ -1,4 +1,4 @@
-package com.klizos.blockchain.data.model
+package com.klizos.blockchain.data.model.transaction
 
 
 import com.google.gson.annotations.SerializedName
