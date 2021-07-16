@@ -9,7 +9,7 @@ import com.google.gson.Gson
 import com.klizos.blockchain.data.model.ConnectionState
 import com.klizos.blockchain.data.model.transaction.Transaction
 import com.klizos.blockchain.data.network.CONNECTION_URL
-import com.klizos.blockchain.data.network.UNCOFIRMED_SUBCRIPTION
+import com.klizos.blockchain.data.network.UNCONFIRMED_SUBSCRIPTION
 import com.klizos.blockchain.utils.getBitcoinPrice
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineScope
@@ -68,7 +68,7 @@ class FirstFragmentViewModel @Inject constructor() : ViewModel() {
         override fun onOpen(webSocket: WebSocket, response: Response) {
             writeExecutor.execute {
                 try {
-                    webSocket.send(UNCOFIRMED_SUBCRIPTION)
+                    webSocket.send(UNCONFIRMED_SUBSCRIPTION)
                 } catch (e: IOException) {
                     System.err.println("Unable to send messages: " + e.message)
                 }
